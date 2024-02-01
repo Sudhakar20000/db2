@@ -1,0 +1,15 @@
+DB2 installation
+https://www.tutorialspoint.com/db2/db2_server_installation.htm
+
+
+DB2 BACKUP:
+db2 terminate
+db2 deactivate database one
+db2 backup database one to /home/db2inst1/
+db2 drop database one
+
+DB2 RESTORE:
+db2 restore database one from /home/db2inst1/ taken at  20240201054305
+db2 list history backup all for one
+db2 rollforward db one to end of logs and stop
+
