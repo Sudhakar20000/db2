@@ -13,3 +13,16 @@ db2 restore database one from /home/db2inst1/ taken at  20240201054305
 db2 list history backup all for one
 db2 rollforward db one to end of logs and stop
 
+DB2 PACHING:
+db2inst1 --> stop
+su - db2inst1
+db2stop
+su - dasuer1
+db2admin stop
+su
+cd /opt
+tar -xvf XXXX
+cd universal
+./db2prereqcheck
+./installFixpack
+
